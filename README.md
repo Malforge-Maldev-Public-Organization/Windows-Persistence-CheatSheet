@@ -5,8 +5,8 @@ Introducing a new article featuring a CheatSheet for achieving persistence in Wi
 
 ## What is persistence?
 
-[Windows Red Team Persistence Techniques\
-This guide is part of the HackerSploit Red Team series of guides.](https://www.linode.com/docs/guides/windows-red-team-persistence-techniques/)
+>  Windows Red Team Persistence Techniques\
+This guide is part of the HackerSploit Red Team series of guides. To navigate to other guides in the series, visit [here](https://www.linode.com/docs/guides/windows-red-team-persistence-techniques/)
 
 Persistence involves methods adversaries employ to **maintain access** to systems despite restarts, credential changes, or other disruptions that might terminate their access. These methods encompass any access, action, 
 or configuration modifications that enable them to sustain their presence, such as substituting or manipulating legitimate code or inserting startup code.
@@ -44,8 +44,8 @@ schtasks /CREATE /SC MINUTE /TN "Reverse Shell" /TR "C:\Users\s12de\Downloads\sh
 
 ### Services:
 
-[What is a Windows Service? - Definition from Techopedia\
-A Windows service is an application that usually serves a core operating system function running in the background.](https://www.techopedia.com/definition/13530/windows-service)
+>  What is a Windows Service? - Definition from Techopedia\
+A Windows service is an application that usually serves a core operating system function running in the background, visit [here](https://www.techopedia.com/definition/13530/windows-service)
 
 Windows services are essential parts of the operating system, responsible for handling tasks like memory, device management, user credentials, preferences, and third-party applications. They function similarly to Unix daemons.
 
@@ -133,11 +133,10 @@ Result:
 When user open calculator i receive reverse shell connection.
 
 
-
 ### WinLogon:
 
-[Persistence — Winlogon Helper DLL\
-Winlogon is a Windows component which handles various activities such as the Logon, Logoff, loading user profile during](https://pentestlab.blog/2020/01/14/persistence-winlogon-helper-dll/)
+> Persistence — Winlogon Helper DLL\
+Winlogon is a Windows component which handles various activities such as the Logon, Logoff, loading user profile during. [pentestlab.blog](https://pentestlab.blog/2020/01/14/persistence-winlogon-helper-dll/)
 
 Winlogon is a core Windows component responsible for handling actions like logon, logoff, user profile loading during authentication, shutdown, and the lock screen. These behaviors are controlled through the registry, 
 which specifies processes to launch during the logon sequence. From a red team perspective, these events present an opportunity to trigger arbitrary payloads for persistence.
@@ -167,6 +166,9 @@ Register Key are modified!
 
 
 ### Run Register:
+
+> Structure of the Registry - Win32 apps\
+The registry is a hierarchical database that contains data that is critical for the operation of Windows. [learn.microsoft.com](https://learn.microsoft.com/en-us/windows/win32/sysinfo/structure-of-the-registry)
 
 The Windows Registry is a hierarchical database essential to the functioning of the operating system, as well as the applications and services running on it. 
 Structured like a tree, **each node is referred to as a 'key'**, which can hold both subkeys and data entries known as 'values'.
@@ -209,8 +211,8 @@ copy "shell.exe" "C:\Users\s12de\AppData\Roaming\Microsoft\Windows\Start Menu\Pr
 
 ### WMIC:
 
-[Persistence - WMI Event Subscription
-Windows Management Instrumentation (WMI) enables system administrators to perform tasks locally and remotely.](https://pentestlab.blog/2020/01/21/persistence-wmi-event-subscription/)
+> Persistence - WMI Event Subscription
+Windows Management Instrumentation (WMI) enables system administrators to perform tasks locally and remotely. [pentestlab.blog](https://pentestlab.blog/2020/01/21/persistence-wmi-event-subscription/)
 
 Windows Management Instrumentation (WMI) allows system administrators to manage tasks both locally and remotely. From a red team perspective, WMI can be leveraged for various activities such as lateral movement, persistence, situational awareness, code execution, and even as a [command and control](https://pentestlab.blog/2017/11/20/command-and-control-wmi/) (C2) mechanism. 
 Since WMI is a built-in component present in nearly all Windows operating systems (from Windows 98 to Windows 10), it enables these offensive actions to remain under the radar of blue team defenses.
