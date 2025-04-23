@@ -248,6 +248,6 @@ wmic /NAMESPACE:"\\root\subscription" PATH  __FilterToConsumerBinding CREATE Fil
 
 That concludes today’s article. I believe this cheat sheet will be highly useful, and I'm also developing a C++ tool to automate the entire process. Stay tuned to my GitHub for updates. 
 
-Thanks for reading! 😊
+Thanks for reading! :D
 
 **-Malforge Group.**
